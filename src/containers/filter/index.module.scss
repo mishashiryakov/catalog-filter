@@ -1,0 +1,17 @@
+@import '../../assets/helpers/typography.scss';
+
+.container {
+  margin-right: 38px;
+}
+
+.title {
+  @include title();
+}
+
+.price {
+  @include title-s();
+}
+
+.brand {
+  @include title-s();
+}

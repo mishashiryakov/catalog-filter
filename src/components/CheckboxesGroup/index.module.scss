@@ -1,0 +1,15 @@
+@import '../../assets/helpers/typography.scss';
+
+.container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.checkbox {
+  margin-right: 9px;
+}
+
+.brandName {
+  @include text-s();
+}

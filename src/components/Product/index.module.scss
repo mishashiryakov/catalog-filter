@@ -1,0 +1,26 @@
+@import '../../assets/helpers/typography.scss';
+
+.container {
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.title {
+  @include text-s();
+  margin: 0 0 31px 0;
+}
+
+.price {
+  @include title-s();
+  margin-bottom: 18px;
+}
+
+.image {
+  width: 100%;
+}
+
+.infoBlock {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px 16px 16px;
+}

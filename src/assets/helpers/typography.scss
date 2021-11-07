@@ -1,0 +1,17 @@
+@mixin title {
+  font-size: 32px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+@mixin title-s {
+  font-size: 16px;
+  line-height: 140%;
+  font-weight: 700;
+}
+
+@mixin text-s {
+  font-size: 14px;
+  line-height: 140%;
+  font-weight: 500;
+}

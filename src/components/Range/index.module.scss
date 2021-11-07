@@ -1,0 +1,28 @@
+@import '../../assets/helpers/variables.scss';
+
+
+.container {
+  outline: 1px solid $lightgrey;
+  border-radius: 4px;
+  height: 42px;
+  width: 224px;
+
+  &:hover {
+    outline: 1px solid $lightblack;
+  }
+}
+
+.input {
+  border: none;
+  height: 100%;
+  padding-left: 11px;
+  width: 50%;
+  
+  &:focus {
+    outline: none;
+  }
+
+  &:first-child {
+    border-right: 1px solid $lightgrey;
+  }
+}
