@@ -4,14 +4,16 @@ import { Checkbox } from '../Checkbox';
 import styles from './index.module.scss';
 
 interface ICheckboxesGroup {
-  values: IBrandsObj
-  setBrands: Dispatch<SetStateAction<IBrandsObj>>
+  values: IBrandsObj,
+  setBrands: Dispatch<SetStateAction<IBrandsObj>>,
+  setManualUpdate: (value: boolean) => void
 }
 
 export const CheckboxesGroup = (props: ICheckboxesGroup) => {
-  const { values, setBrands } = props;
+  const { values, setBrands, setManualUpdate } = props;
 
   const onChangeHandler = (name: string, checked: boolean, value: string) => {
+    setManualUpdate(true);
     setBrands(prev => {
       return { ...prev, [name]: {main: !checked, value, title: name}}
     })

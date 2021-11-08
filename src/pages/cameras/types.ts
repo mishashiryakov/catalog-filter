@@ -23,3 +23,13 @@ export interface IRangeObj {
   min: string, 
   max: string
 }
+
+export interface IUrlParams {
+  [key: string]: string[],
+}
+
+export interface IResponseData {
+  isLoading: boolean, 
+  error: string | null, 
+  products: IProduct[]
+}

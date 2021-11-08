@@ -6,5 +6,11 @@ export const executeRequest = (api: string, login: string, password: string, que
   return fetch(`${api}?${queryParams}`, {
     method: "GET",
     headers: headers,
-  }).then((res) => res.json());
+  }).then(res => {
+    if(res.ok) {
+      return res.json()
+    } else {
+      throw new Error(res.statusText)
+    }
+  })
 };

@@ -1,4 +1,5 @@
 @import '../../assets/helpers/variables.scss';
+@import '../../assets/helpers/typography.scss';
 
 
 .container {
@@ -17,6 +18,8 @@
   height: 100%;
   padding-left: 11px;
   width: 50%;
+  @include text-s();
+  font-family: 'Montserrat', sans-serif;
   
   &:focus {
     outline: none;

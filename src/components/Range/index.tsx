@@ -4,14 +4,16 @@ import styles from './index.module.scss';
 
 interface IRange {
   min: number,
-  max: number
-  setRange: Dispatch<SetStateAction<IRangeObj>>
+  max: number,
+  setRange: Dispatch<SetStateAction<IRangeObj>>,
+  setManualUpdate: (value: boolean) => void,
 }
 
 export const Range = (props: IRange) => {
-  const { min, max, setRange } = props;
+  const { min, max, setRange, setManualUpdate } = props;
 
   const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setManualUpdate(true);
     setRange(prev => {
       return {...prev, [e.target.name]: e.target.value}
     })

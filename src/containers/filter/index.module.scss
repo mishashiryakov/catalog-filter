@@ -1,4 +1,4 @@
-@import '../../assets/helpers/typography.scss';
+@import "../../assets/helpers/typography.scss";
 
 .container {
   margin-right: 38px;
@@ -6,6 +6,7 @@
 
 .title {
   @include title();
+  margin-top: 0;
 }
 
 .price {
@@ -14,4 +15,11 @@
 
 .brand {
   @include title-s();
+}
+
+@media (max-width: 550px) {
+  .container {
+    margin: 0;
+    padding: 47px 20px 34px 20px;
+  }
 }

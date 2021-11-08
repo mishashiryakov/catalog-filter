@@ -5,7 +5,19 @@
 
 @media (max-width: 1500px) {
   .container {
-    display: flex;
     padding: 65px 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 65px 50px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    flex-direction: column;
+    padding: 0;
   }
 }

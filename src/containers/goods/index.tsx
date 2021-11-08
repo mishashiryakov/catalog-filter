@@ -9,6 +9,7 @@ interface IGoods {
 
 export const Goods = (props: IGoods) => {
   const { products } = props;
+
   return (
     <div className={styles.container}>
       {products.map((product) => 

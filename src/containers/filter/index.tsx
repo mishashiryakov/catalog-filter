@@ -5,15 +5,16 @@ import { IBrandsObj, IRangeObj } from '../../pages/cameras/types';
 import styles from './index.module.scss';
 
 interface IFilterContainer {
-  title: string
-  brands: IBrandsObj
+  title: string,
+  brands: IBrandsObj,
   setBrands: Dispatch<SetStateAction<IBrandsObj>>,
-  range: IRangeObj
-  setRange: Dispatch<SetStateAction<IRangeObj>>
+  range: IRangeObj,
+  setRange: Dispatch<SetStateAction<IRangeObj>>,
+  setManualUpdate: (value: boolean) => void
 }
 
 export const FilterContainer = (props: IFilterContainer) => {
-  const { title, brands, setBrands, range, setRange } = props;
+  const { title, brands, setBrands, range, setRange, setManualUpdate } = props;
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{title}</h1>
@@ -22,9 +23,10 @@ export const FilterContainer = (props: IFilterContainer) => {
         min={Math.round(Number(range.min))}
         max={Math.round(Number(range.max))}
         setRange={setRange}
+        setManualUpdate={setManualUpdate}
       />
       <p className={styles.brand}>Бренд</p>
-      <CheckboxesGroup values={brands} setBrands={setBrands} />
+      <CheckboxesGroup values={brands} setBrands={setBrands} setManualUpdate={setManualUpdate}/>
     </div>
   )
 }
