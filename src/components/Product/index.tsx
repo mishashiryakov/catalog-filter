@@ -1,6 +1,7 @@
 import React from 'react';
 import { IProduct } from '../../containers/cameras/types';
 import { Button } from '../Button';
+import LazyLoad from 'react-lazyload';
 import styles from './index.module.scss';
 
 const BUTTON_TITLE = 'В корзину';
@@ -10,7 +11,9 @@ export const Product = (props: IProduct) => {
 
   return (
     <div className={styles.container}>
-      <img src={image.desktop.x1} className={styles.image} alt={title}/>
+      <LazyLoad height={120}>
+        <img src={image.desktop.x1} className={styles.image} alt={title}/>
+      </LazyLoad>
       <div className={styles.infoBlock}>
         <h1 className={styles.title}>{title}</h1>
         <span className={styles.price}>{price} ₽</span>
