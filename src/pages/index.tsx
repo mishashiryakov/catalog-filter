@@ -6,7 +6,7 @@ const Home: NextPage = ({}) => {
   return <div className={styles.container}>
     <h1>Home page</h1>
     <Link href="/cameras">
-      <a>Link to cameras</a>
+      <a className={styles.link}>Link to cameras</a>
     </Link>
   </div>;
 };

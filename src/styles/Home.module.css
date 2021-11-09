@@ -1,3 +1,21 @@
 .container {
   padding: 65px 310px;
 }
+
+.link {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+@media (max-width: 1500px) {
+  .container {
+    padding: 65px 100px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 65px 20px;
+  }
+}
