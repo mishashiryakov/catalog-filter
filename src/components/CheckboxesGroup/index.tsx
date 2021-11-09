@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction }  from 'react';
-import { IBrand, IBrandsObj } from '../../pages/cameras/types';
+import { IBrandsObj } from '../../containers/cameras/types';
 import { Checkbox } from '../Checkbox';
 import styles from './index.module.scss';
 

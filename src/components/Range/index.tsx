@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction } from 'react';
-import { IRangeObj } from '../../pages/cameras/types';
+import { IRangeObj } from '../../containers/cameras/types';
 import styles from './index.module.scss';
 
 interface IRange {

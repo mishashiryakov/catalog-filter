@@ -1,5 +1,5 @@
 import React from 'react';
-import { IProduct } from '../../pages/cameras/types';
+import { IProduct } from '../../containers/cameras/types';
 import { Button } from '../Button';
 import styles from './index.module.scss';
 
@@ -10,7 +10,7 @@ export const Product = (props: IProduct) => {
 
   return (
     <div className={styles.container}>
-      <img src={image.desktop.x1} className={styles.image}/>
+      <img src={image.desktop.x1} className={styles.image} alt={title}/>
       <div className={styles.infoBlock}>
         <h1 className={styles.title}>{title}</h1>
         <span className={styles.price}>{price} ₽</span>

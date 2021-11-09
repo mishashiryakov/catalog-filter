@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './index.module.scss';
-import cn from 'classnames';
 
 interface ICheckbox {
   checked: boolean,
@@ -16,7 +15,7 @@ export const Checkbox = (props: ICheckbox) => {
     <input 
       type="checkbox"
       name={name}
-      className={cn(styles.checkbox, className)} 
+      className={`${styles.checkbox} ${className}`} 
       checked={checked} 
       onChange={() => onChange(name, checked, value)}
     />

@@ -1,7 +1,7 @@
 import React, { Dispatch, SetStateAction } from 'react';
 import { CheckboxesGroup } from '../../components/CheckboxesGroup';
 import { Range } from '../../components/Range';
-import { IBrandsObj, IRangeObj } from '../../pages/cameras/types';
+import { IBrandsObj, IRangeObj } from '../cameras/types';
 import styles from './index.module.scss';
 
 interface IFilterContainer {
