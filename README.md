@@ -2,7 +2,7 @@ Development server - npm run dev\
 Create build - npm run build\
 Deploy - https://catalog-filter.vercel.app/ 
 
-Стек - Next.js, React, TypeScript, SCSS, CSS modules
+Стек - Next.js, React, TypeScript, SCSS, CSS modules\
 Сделал:
 1) При монтировании компонента из адресной строки берутся URL параметры для запроса (с фильтрами либо без). Делается fetch запрос.
 2) При изменении состояния цены или выбранного бренда создается новый URL под выбранные фильтры. Делается запрос.
