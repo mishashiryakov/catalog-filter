@@ -1,6 +1,6 @@
 Development server - npm run dev\
 Create build - npm run build\
-Deploy - https://catalog-filter.vercel.app/ \
+Deploy - https://catalog-filter.vercel.app/ 
 
 Стек - Next.js, React, TypeScript, SCSS, CSS modules
 Сделал:
